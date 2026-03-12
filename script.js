@@ -44,7 +44,9 @@ function filterCategory(color) {
     filtered.forEach(p => {
         listContainer.innerHTML += `
             <div class="group cursor-pointer" onclick="viewProduct(${p.id})">
-                <img src="${p.img}" class="w-full mb-4 border border-zinc-800 group-hover:border-white transition-all">
+                <div class="img-wrapper mb-4 border border-zinc-800 group-hover:border-white transition-all">
+                    <img src="${p.img}" alt="${p.name}">
+                </div>
                 <h4 class="font-bold text-xs tracking-widest uppercase mb-1">${p.name}</h4>
                 <p class="text-zinc-500 font-mono text-sm">$${p.price}</p>
             </div>
