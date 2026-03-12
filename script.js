@@ -1,25 +1,25 @@
 // Product Database
 const products = [
     // Red Category
-    { id: 1, name: "Manchester '99", color: "Red", price: 89, img: "https://placehold.co/500x600/300000/ffffff?text=MAN+UTD+99" },
-    { id: 2, name: "Liverpool '84", color: "Red", price: 79, img: "https://placehold.co/500x600/400000/ffffff?text=LFC+84" },
-    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "https://placehold.co/500x600/500000/ffffff?text=ARS+04" },
-    { id: 4, name: "Bayern '96", color: "Red", price: 95, img: "https://placehold.co/500x600/600000/ffffff?text=FCB+96" },
-    { id: 5, name: "Milan '89", color: "Red", price: 120, img: "https://placehold.co/500x600/200000/ffffff?text=MILAN+89" },
+    { id: 1, name: "Manchester '99", color: "Red", price: 89, img: "Red/man_utd_99.webp" },
+    { id: 2, name: "Liverpool '84", color: "Red", price: 79, img: "Red/lfc_84.jpg" },
+    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "Red/ars_04.webp },
+    { id: 4, name: "Bayern '96", color: "Red", price: 95, img: "Red/fcb_96.jpg" },
+    { id: 5, name: "Milan '89", color: "Red", price: 120, img: "Red/milan_89.webp" },
     
     // Blue Category
-    { id: 6, name: "Chelsea '98", color: "Blue", price: 85, img: "https://placehold.co/500x600/000033/ffffff?text=CFC+98" },
-    { id: 7, name: "Italy '06", color: "Blue", price: 130, img: "https://placehold.co/500x600/000044/ffffff?text=ITALY+06" },
-    { id: 8, name: "France '98", color: "Blue", price: 140, img: "https://placehold.co/500x600/000055/ffffff?text=FRANCE+98" },
-    { id: 9, name: "Inter '98", color: "Blue", price: 105, img: "https://placehold.co/500x600/000022/ffffff?text=INTER+98" },
-    { id: 10, name: "Everton '85", color: "Blue", price: 70, img: "https://placehold.co/500x600/000066/ffffff?text=EFC+85" },
+    { id: 6, name: "Chelsea '98", color: "Blue", price: 85, img: "Blue/cfc_98.jpg" },
+    { id: 7, name: "Italy '06", color: "Blue", price: 130, img: "Blue/italy_06.webp" },
+    { id: 8, name: "France '98", color: "Blue", price: 140, img: "Blue/france_98.webp" },
+    { id: 9, name: "Inter '98", color: "Blue", price: 105, img: "Blue/inter_98.jpg" },
+    { id: 10, name: "Everton '85", color: "Blue", price: 70, img: "Blue/efc_85.jpg" },
     
     // Yellow Category
-    { id: 11, name: "Brazil '70", color: "Yellow", price: 150, img: "https://placehold.co/500x600/777700/000000?text=BRAZIL+70" },
-    { id: 12, name: "Dortmund '97", color: "Yellow", price: 99, img: "https://placehold.co/500x600/888800/000000?text=BVB+97" },
-    { id: 13, name: "Arsenal '89 Away", color: "Yellow", price: 115, img: "https://placehold.co/500x600/999900/000000?text=AFC+89" },
-    { id: 14, name: "Colombia '90", color: "Yellow", price: 85, img: "https://placehold.co/500x600/aaaa00/000000?text=COL+90" },
-    { id: 15, name: "Sweden '94", color: "Yellow", price: 75, img: "https://placehold.co/500x600/bbbb00/000000?text=SWEDEN+94" }
+    { id: 11, name: "Brazil '70", color: "Yellow", price: 150, img: "Yellow/brazil_70.jpg" },
+    { id: 12, name: "Dortmund '97", color: "Yellow", price: 99, img: "Yellow/bvb_97.webp" },
+    { id: 13, name: "Arsenal '89 Away", color: "Yellow", price: 115, img: "Yellow/afc_89.jpg" },
+    { id: 14, name: "Colombia '90", color: "Yellow", price: 85, img: "Yellow/col_90.webp" },
+    { id: 15, name: "Sweden '94", color: "Yellow", price: 75, img: "Yellow/sweden_94.webp" }
 ];
 
 let cart = [];
