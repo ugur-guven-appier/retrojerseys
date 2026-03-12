@@ -41,20 +41,21 @@
 /* Container for the jersey image */
 .img-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 4; /* Standardizes the height */
-    background-color: #ffffff; /* Subtle dark background for the frame */
+    aspect-ratio: 3 / 4; /* Standardized frame size */
+    background-color: #ffffff; /* This makes the frame background white */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid #27272a;
+    /* Optional: Keep the border or remove it if you want it to look borderless */
+    border: 1px solid #e5e7eb; 
 }
 
 .img-wrapper img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Prevents stretching, keeps the whole jersey visible */
-    padding: 12px; /* Gives small jerseys some breathing room in the frame */
+    object-fit: contain; /* Prevents stretching */
+    padding: 15px; /* Creates a clean white margin around the jersey */
 }
 
 
