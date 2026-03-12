@@ -1,0 +1,39 @@
+/* Custom Styles for Eagle Retro Jerseys */
+
+.hidden {
+    display: none;
+}
+
+.checkout-input {
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid #27272a; /* zinc-800 */
+    color: white;
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.checkout-input:focus {
+    border-color: #ffffff;
+}
+
+/* Page Transition Smoothness */
+.page-section {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Grayscale Effect for Retro Vibe */
+#product-list img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+#product-list div:hover img {
+    filter: grayscale(0%);
+}
