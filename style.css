@@ -42,7 +42,7 @@
 .img-wrapper {
     width: 100%;
     aspect-ratio: 3 / 4; /* Standardizes the height */
-    background-color: #0a0a0a; /* Subtle dark background for the frame */
+    background-color: #ffffff; /* Subtle dark background for the frame */
     display: flex;
     align-items: center;
     justify-content: center;
