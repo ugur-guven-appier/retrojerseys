@@ -1,25 +1,25 @@
 // Product Database
 const products = [
     // Red Category
-    { id: 1, name: "Manchester '99", color: "Red", price: 89, img: "Red/man_utd_99.webp" },
-    { id: 2, name: "Liverpool '84", color: "Red", price: 79, img: "Red/lfc_84.jpg" },
-    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "Red/ars_04.webp },
-    { id: 4, name: "Bayern '96", color: "Red", price: 95, img: "Red/fcb_96.jpg" },
-    { id: 5, name: "Milan '89", color: "Red", price: 120, img: "Red/milan_89.webp" },
+    { id: 1, name: "Manchester '99", color: "Red", price: 89, img: "man_utd_99.webp" },
+    { id: 2, name: "Liverpool '84", color: "Red", price: 79, img: "lfc_84.jpg" },
+    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "ars_04.webp },
+    { id: 4, name: "Bayern '96", color: "Red", price: 95, img: "fcb_96.jpg" },
+    { id: 5, name: "Milan '89", color: "Red", price: 120, img: "milan_89.webp" },
     
     // Blue Category
-    { id: 6, name: "Chelsea '98", color: "Blue", price: 85, img: "Blue/cfc_98.jpg" },
-    { id: 7, name: "Italy '06", color: "Blue", price: 130, img: "Blue/italy_06.webp" },
-    { id: 8, name: "France '98", color: "Blue", price: 140, img: "Blue/france_98.webp" },
-    { id: 9, name: "Inter '98", color: "Blue", price: 105, img: "Blue/inter_98.jpg" },
-    { id: 10, name: "Everton '85", color: "Blue", price: 70, img: "Blue/efc_85.jpg" },
+    { id: 6, name: "Chelsea '98", color: "Blue", price: 85, img: "cfc_98.jpg" },
+    { id: 7, name: "Italy '06", color: "Blue", price: 130, img: "italy_06.webp" },
+    { id: 8, name: "France '98", color: "Blue", price: 140, img: "france_98.webp" },
+    { id: 9, name: "Inter '98", color: "Blue", price: 105, img: "inter_98.jpg" },
+    { id: 10, name: "Everton '85", color: "Blue", price: 70, img: "efc_85.jpg" },
     
     // Yellow Category
-    { id: 11, name: "Brazil '70", color: "Yellow", price: 150, img: "Yellow/brazil_70.jpg" },
-    { id: 12, name: "Dortmund '97", color: "Yellow", price: 99, img: "Yellow/bvb_97.webp" },
-    { id: 13, name: "Arsenal '89 Away", color: "Yellow", price: 115, img: "Yellow/afc_89.jpg" },
-    { id: 14, name: "Colombia '90", color: "Yellow", price: 85, img: "Yellow/col_90.webp" },
-    { id: 15, name: "Sweden '94", color: "Yellow", price: 75, img: "Yellow/sweden_94.webp" }
+    { id: 11, name: "Brazil '70", color: "Yellow", price: 150, img: "brazil_70.jpg" },
+    { id: 12, name: "Dortmund '97", color: "Yellow", price: 99, img: "bvb_97.webp" },
+    { id: 13, name: "Arsenal '89 Away", color: "Yellow", price: 115, img: "afc_89.jpg" },
+    { id: 14, name: "Colombia '90", color: "Yellow", price: 85, img: "col_90.webp" },
+    { id: 15, name: "Sweden '94", color: "Yellow", price: 75, img: "sweden_94.webp" }
 ];
 
 let cart = [];
