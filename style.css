@@ -73,11 +73,40 @@
     border-color: white;
 }
 
-/* Footer Slider Styles */
+/* Layout fix to keep footer at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-section {
+    flex: 1 0 auto; /* This pushes the footer down */
+}
+
+/* Footer Styles */
+footer {
+    flex-shrink: 0;
+    background-color: #000;
+    border-top: 1px solid #27272a;
+    padding-bottom: 40px; /* Padding from the very bottom of the page */
+    padding-top: 40px;
+}
+
+.logos-slide-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
 .logos-track {
     display: flex;
-    width: calc(250px * 16); /* Based on logo width * total logos (including duplicates) */
-    animation: scroll 40s linear infinite;
+    width: max-content;
+    animation: scroll 25s linear infinite;
 }
 
 .club-logo {
@@ -85,18 +114,28 @@
     height: 60px;
     margin: 0 40px;
     object-fit: contain;
+    /* Removed brightness/invert filters so logos stay original */
+    filter: none; 
+    transition: transform 0.3s ease;
 }
 
+.club-logo:hover {
+    transform: scale(1.1); /* Subtle pop effect on hover */
+}
+
+/* Infinite Loop Animation */
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 8)); } /* Scroll exactly half the track length */
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
-/* Pause animation on hover */
 .logos-track:hover {
     animation-play-state: paused;
 }
-
 /* Specific adjustment for detail page to keep images standardized */
 #product-detail .img-wrapper {
     max-width: 500px; /* Limits the "huge" image size */
