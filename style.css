@@ -77,3 +77,34 @@
     color: black;
     border-color: white;
 }
+
+/* Footer Slider Styles */
+.logos-track {
+    display: flex;
+    width: calc(250px * 16); /* Based on logo width * total logos (including duplicates) */
+    animation: scroll 40s linear infinite;
+}
+
+.club-logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 40px;
+    object-fit: contain;
+    /* This filter makes the logos white to match your theme */
+    filter: brightness(0) invert(1) opacity(0.3);
+    transition: opacity 0.3s ease;
+}
+
+.club-logo:hover {
+    filter: brightness(0) invert(1) opacity(1);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 8)); } /* Scroll exactly half the track length */
+}
+
+/* Pause animation on hover */
+.logos-track:hover {
+    animation-play-state: paused;
+}
