@@ -3,7 +3,7 @@ const products = [
     // Red Category
     { id: 1, name: "Manchester '99", color: "Red", price: 89, img: "man_utd_99.webp" },
     { id: 2, name: "Liverpool '84", color: "Red", price: 79, img: "lfc_84.jpg" },
-    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "ars_04.webp },
+    { id: 3, name: "Arsenal '04", color: "Red", price: 110, img: "ars_04.webp" },
     { id: 4, name: "Bayern '96", color: "Red", price: 95, img: "fcb_96.jpg" },
     { id: 5, name: "Milan '89", color: "Red", price: 120, img: "milan_89.webp" },
     
