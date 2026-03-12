@@ -56,11 +56,19 @@ function filterCategory(color) {
 }
 
 // Product Page Logic
+f// Modify your viewProduct function to handle the back button destination
 function viewProduct(id) {
     currentProduct = products.find(p => p.id === id);
+    
+    // Update the Product Detail UI
     document.getElementById('detail-img').src = currentProduct.img;
     document.getElementById('detail-name').innerText = currentProduct.name;
     document.getElementById('detail-price').innerText = "$" + currentProduct.price;
+    
+    // Set the "Back" button on the product page to return to the specific color category
+    const backBtn = document.getElementById('back-to-cat');
+    backBtn.onclick = () => filterCategory(currentProduct.color);
+    
     showPage('product-detail');
 }
 
