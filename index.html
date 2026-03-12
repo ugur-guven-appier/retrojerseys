@@ -48,31 +48,34 @@
         <button id="back-to-cat" class="mb-8 flex items-center gap-2 text-xs uppercase tracking-widest text-zinc-500 hover:text-white transition">
             ← Back to Collection
         </button>
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            </div>
-            <div class="img-wrapper">
+        
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            <div class="img-wrapper border border-zinc-800">
                 <img id="detail-img" src="" class="w-full grayscale hover:grayscale-0 transition-all duration-500">
             </div>
+    
             <div class="details">
-                <h2 id="detail-name" class="text-5xl font-black mb-2 uppercase"></h2>
+                <h2 id="detail-name" class="text-5xl font-black mb-2 uppercase tracking-tighter"></h2>
                 <p id="detail-price" class="text-2xl mb-4 text-zinc-400 font-mono"></p>
                 
                 <div class="mb-6">
                     <p class="text-xs font-bold uppercase tracking-widest mb-3">Select Size</p>
                     <div class="flex gap-2" id="size-selector">
-                        <button onclick="selectSize('S')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white">S</button>
-                        <button onclick="selectSize('M')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white">M</button>
-                        <button onclick="selectSize('L')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white">L</button>
-                        <button onclick="selectSize('XL')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white">XL</button>
+                        <button onclick="selectSize('S')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white transition-colors">S</button>
+                        <button onclick="selectSize('M')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white transition-colors">M</button>
+                        <button onclick="selectSize('L')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white transition-colors">L</button>
+                        <button onclick="selectSize('XL')" class="size-btn border border-zinc-800 px-4 py-2 hover:border-white transition-colors">XL</button>
                     </div>
                 </div>
             
                 <div class="mb-8">
                     <p class="text-xs font-bold uppercase tracking-widest mb-3">Quantity</p>
-                    <input type="number" id="item-qty" value="1" min="1" class="bg-black border border-zinc-800 p-2 w-20 outline-none focus:border-white">
+                    <input type="number" id="item-qty" value="1" min="1" class="bg-black border border-zinc-800 p-2 w-24 outline-none focus:border-white text-white">
                 </div>
             
-                <button onclick="addToCart()" class="bg-white text-black px-12 py-4 font-black hover:bg-zinc-300 w-full transition-colors">ADD TO BAG</button>
+                <button onclick="addToCart()" class="bg-white text-black px-12 py-4 font-black hover:bg-zinc-300 w-full transition-colors">
+                    ADD TO BAG
+                </button>
             </div>
         </div>
     </section>

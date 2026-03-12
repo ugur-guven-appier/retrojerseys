@@ -56,7 +56,6 @@ function filterCategory(color) {
 }
 
 // Product Page Logic
-f// Modify your viewProduct function to handle the back button destination
 function viewProduct(id) {
     currentProduct = products.find(p => p.id === id);
     
@@ -65,13 +64,17 @@ function viewProduct(id) {
     document.getElementById('detail-name').innerText = currentProduct.name;
     document.getElementById('detail-price').innerText = "$" + currentProduct.price;
     
+    // Reset selection and quantity when opening a new product
+    selectedSize = null;
+    document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('item-qty').value = 1;
+
     // Set the "Back" button on the product page to return to the specific color category
     const backBtn = document.getElementById('back-to-cat');
     backBtn.onclick = () => filterCategory(currentProduct.color);
     
     showPage('product-detail');
 }
-
 // Cart Logic
 let selectedSize = null;
 
